@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const mongoURI = "mongodb://localhost:27017/EcomDatabase";
+const mongoURI = "mongodb+srv://ahmadhashmi1304:xt2kut17@cluster0.oe36p.mongodb.net/";
 async function connectToMongo() {
     await mongoose.connect(mongoURI).then(()=>{console.log("connected Successfully")}).catch((err)=>{console.log(err)})
 }
